@@ -1,0 +1,2 @@
+<div class="error" *ngIf="message">{{message}}</div>
+<input #file type="file" accept='image/*' (change)="upload(file.files)" />

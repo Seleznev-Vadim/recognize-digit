@@ -1,0 +1,12 @@
+<div class="prediction-card">
+  <div class="prediction-image">
+    <h3>Uploaded image</h3>
+    <img [src]="prediction.uploadedImageUrl" height="100" *ngIf="prediction.uploadedImageUrl">
+  </div>
+  <div class="prediction-message">
+    <h3>Recognized digit</h3>
+    <div>
+      <h1>{{prediction.prediction}}</h1>
+    </div>
+  </div>
+</div>
