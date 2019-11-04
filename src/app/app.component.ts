@@ -18,7 +18,7 @@ export class AppComponent implements OnInit {
   }
 
   async loadModel() {
-    this.model = await tf.loadLayersModel('./recognize-digit/assets/model.json');
+    this.model = await tf.loadLayersModel('./assets/model.json');
   }
 
   onImageUpload(imageUrl: any) {
